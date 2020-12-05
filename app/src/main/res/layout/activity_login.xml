@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bird1"
+        android:background="#000000"
+        >
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:background="#57F3F3F3"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/loginButton"
+            android:layout_margin="4dp"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                >
+                <TextView
+                    android:id="@+id/usernameLabel"
+                    android:text="사용자명 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/usernameLabel" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                >
+                <TextView
+                    android:id="@+id/passwordLabel"
+                    android:text="비밀번호 : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/passwordLabel"
+                    android:layout_below="@+id/usernameInput"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:text="Log-in"
+            android:background="#111112"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="90dp" />
+
+
+</RelativeLayout>
